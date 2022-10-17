@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale 1.0" />
+        <meta name="description" content="flash-adoption-app-cetcot">
+        <title id="title">FLASH Adopciones</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body id="top">
+
+        <!-- Banner -->
+        <!-- Dentro del banner, un video creado en After Effects que loopea junto al logo de FLASH Adopciones CETCOT 
+        -->
+        <section id="banner" data-video="">
+            <div class="inner">
+                <header>
+                    <nav id="navbar">
+                        <ul>
+                            <img src="images\logodogbg-removebg-preview.png" class="logo" alt="logo" width="180" height="180">
+                            <h1>FLASH ADOPCIONES</h1>
+                            <li><a href="#main">INICIO</a></li>
+                            <li><a href="#footer"><li>CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <a href="#main" class="adoptar scrolly"><img src="images\white-down-arrow.png" alt="boton-flecha"></a>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <!-- Seccion main o principal, con boxes o cajas representativas de los recuadros para cada animal en adopcion, incluyendo su respectiva foto e informacion individual 
+        -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Boxes -->
+                <div class="for-adoption wrapper">
+
+                    <!-- Box N° 1 -->
+                    <div class="box">
+                        <!-- Esta seccion podria incluir un video al que redirecciona la imagen
+                            <a href="" class=""><img src="" alt=""></a>    
+                        -->
+                        <img src="images\jackson.jpeg" alt="foto-de-jackson" widht="595" height="574">
+                        <div class="description">
+                            <h3>Jackson</h3>
+                            <ul>
+                                <li><span>Peso: </span>32 kg</li>
+                                <li><span>Edad: </span>2 años</li>
+                                <li class="perfil">Amoroso, muy tranquilo y muy vago. Ama la comida, jugar y dormir.<br>
+                                Ideal para departamento.<br>
+                                Si lo acaricias, nunca va a alejarse de tu lado.</li>
+                            </ul>
+                            <div class="si">
+                                <p>¿Me adoptarías?</p>
+
+                                <!-- Boton para abrir el formulario popup -->
+                                <button class="open-button" onclick="openForm()">SI</button>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <!-- Box N° 2 -->
+                    <div class="box">
+                        <!-- Esta seccion podria incluir un video al que redirecciona la imagen
+                            <a href="" class=""><img src="" alt=""></a>    
+                        -->
+                        <img src="images\loki.jpeg" alt="foto-de-loki">
+                        <div class="description">
+                            <h3>Loki</h3>
+                            <ul>
+                                <li><span>Peso: </span>30 kg</li>
+                                <li><span>Edad: </span>1 año y 6 meses</li>
+                                <li class="perfil">Activo. Muy juguetón y cariñoso.<br>
+                                Ideal para ñiños.<br>
+                                Es muy alegre y compañero, con él nunca vas a sentirte solo.</li>
+                            </ul>
+                            <div class="si">
+                                <p>¿Me adoptarías?</p>
+
+                                <!-- Boton para abrir el formulario popup -->
+                                <button class="open-button" onclick="openForm()">SI</button>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- Box N° 3 -->
+                    <div class="box">
+                        <!-- Esta seccion podria incluir un video al que redirecciona la imagen
+                            <a href="" class=""><img src="" alt=""></a>    
+                        -->
+                        <img src="images\diana.jpeg" alt="foto-de-diana" width="800" height="600">
+                        <div class="description">
+                            <h3>Diana</h3>
+                            <ul>
+                                <li><span>Peso: </span>5,9 kg</li>
+                                <li><span>Edad: </span>2 años</li>
+                                <li class="perfil">Amoroso, muy tranquilo y muy vago. Ama la comida, jugar y dormir.<br>
+                                Ideal para departamento.<br>
+                                Si lo acaricias, nunca va a alejarse de tu lado.</li>
+                            </ul>
+                            <div class="si">
+                                <p>¿Me adoptarías?</p>
+
+                                <!-- Boton para abrir el formulario popup -->
+                                <button class="open-button" onclick="openForm()">SI</button>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- Box N° 4 -->
+                    <div class="box">
+                        <!-- Esta seccion podria incluir un video al que redirecciona la imagen
+                            <a href="" class=""><img src="" alt=""></a>    
+                        -->
+                        <img src="images\huesos.jpeg" alt="foto-de-huesos" width="600" height="800">
+                        <div class="description">
+                            <h3>Huesos</h3>
+                            <ul>
+                                <li><span>Peso: </span>22 kg</li>
+                                <li><span>Edad: </span>5 años</li>
+                                <li class="perfil">Muy amoroso y compañero.<br>
+                                Miedoso e inseguro con un pasado de mucha soledad y maltrato.<br>
+                                Te vas a enamorar de él y nunca vas a olvidarlo si lo conoces.</li>
+                            </ul>
+                            <div class="si">
+                                <p>¿Me adoptarías?</p>
+
+                                <!-- Boton para abrir el formulario popup -->
+                                <button class="open-button" onclick="openForm()">SI</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box N° 5 -->
+                    <div class="box">
+                        <!-- Esta seccion podria incluir un video al que redirecciona la imagen
+                            <a href="" class=""><img src="" alt=""></a>    
+                        -->
+                        <img src="images\milo.jpeg" alt="foto-de-milo" width="800" height="598.5">
+                        <div class="description">
+                            <h3>Milo</h3>
+                            <ul>
+                                <li><span>Peso: </span>27 kg</li>
+                                <li><span>Edad: </span>8 años</li>
+                                <li class="perfil">Adulto poco juguetón pero muy cariñoso con las personas.<br>
+                                Acostumbrado a la vida en el campo y patios grandes.<br>
+                                Si le das una chance, va a amarte toda la vida.</li>
+                            </ul>
+                            <div class="si">
+                                <p>¿Me adoptarías?</p>
+
+                                <!-- Boton para abrir el formulario popup -->
+                                <button class="open-button" onclick="openForm()">SI</button>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!-- Box N° 6 -->
+                    <div class="box">
+                        <!-- Esta seccion podria incluir un video al que redirecciona la imagen
+                            <a href="" class=""><img src="" alt=""></a>    
+                        -->
+                        <img src="images\freyja.jpeg" alt="foto-de-freyja">
+                        <div class="description">
+                            <h3>Freyja</h3>
+                            <ul>
+                                <li><span>Peso: </span>4 kg</li>
+                                <li><span>Edad: </span>1 año y 3 meses</li>
+                                <li class="perfil">Muy sereno y tolerante. Adora jugar.<br>
+                                Necesita protección en balcones.<br>
+                                El compañero ideal para una familia con niños y mascotas.</li>
+                            </ul>
+                            <div class="si">
+                                <p>¿Me adoptarías?</p>
+
+                                <!-- Boton para abrir el formulario popup -->
+                                <button class="open-button" onclick="openForm()">SI</button>
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Formulario Popup para adoptar oculto, visible onclick -->
+        <div class="form-container">
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Formulario de adopción</h1>
+
+                    <label for="pet-name"><b>Nombre del animal</b></label>
+                    <input type="text" placeholder="Ingrese el nombre del animal" name="pet-name" required>
+
+                    <label for="name-surname"><b>Nombre y Apellido</b></label>
+                    <input type="text" placeholder="Ingrese nombre y apellido del adoptante" name="name-surname" required>
+
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Ingrese su Email" name="email" required>
+
+                    <!-- completar código para msg Popup dentro del btn 'ENVIAR'
+                    --
+                    data-toggle="modal" data-target="#successPopup" 
+                    -->
+                    <button type="submit" class="btn">ENVIAR</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CERRAR</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Mensaje Popup al enviar formulario
+        --
+        <div id="successPopup" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>¡FELICITACIONES!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="CERRAR">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Se ha enviado tu formulario con éxito.<br>Puede que pronto tengas un nuevo peludo en tu hogar</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        --
+        -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <h2>CONTACTANOS</h2>
+                <p>Para donaciones, consultas, tránsito o voluntariado</p>
+
+                <ul class="icons">
+                    <li><a href="#" class="icon fa-instagram"><img src="images\iglogo.png" alt="logo-de-instagram-contacto" width="100" height="75"></a></li>
+                </ul>
+                <p class="copyright"></p>
+            </div>
+        </footer>
+
+
+        <!-- Scripts -->
+        <script src="scripts.js"></script>
+
+    </body>
+</html>

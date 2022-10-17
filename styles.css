@@ -1,0 +1,341 @@
+/* Reset */
+
+html, body, div, span, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+footer, header {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Box Model */ 
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Basic */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        min-width: 320px;
+    }
+}
+
+body {
+    background: #FAF9F6;
+}
+
+    body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+        -moz-animation:none !important;
+        -webkit-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+
+/* Type */
+
+    body, input, select, textarea {
+        color: rgba(255, 255, 255, 0.75);
+        font-family: sans serif;
+        font-size: 14pt;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+        @media screen and (max-width: 1680px) {
+            body, input, select, textarea {
+                font-size: 11pt;
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            body, input, select, textarea {
+                font-size: 11pt;
+            }
+        }
+
+        @media screen and (max-width: 980px) {
+            body, input, select, textarea {
+                font-size: 12pt;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            body, input, select, textarea {
+                font-size: 12pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body, input, select, textarea {
+                font-size: 12pt;
+            }
+        }
+
+        a {
+            -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            border-bottom: 1px dotted;
+            outline: 0;
+        }
+
+/* Banner && Navbar */
+
+        #navbar {
+            width: 1em;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: safe;
+        }
+
+        /*
+        header {
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+        }
+        */
+
+        /*
+
+        a:hover {
+            color: 
+            border: none;
+        }
+
+        */
+
+        #banner h1 {
+            font-size: 3em;
+        }
+
+        /*
+
+        #banner a:hover {
+            color: #C70039;
+            border: none;
+        }
+
+        #banner .adoptar {
+            background-image: url("images\white-down-arrow.png");
+            background-position: center 1,35em;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            color: rgba(255, 255, 255, 0.75);
+            display: block;
+            height: 4em;
+            text-indent: 4em;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 4em;
+            z-index: 2;
+            margin: 0 auto 2em auto; 
+        }
+        */
+
+
+        p {
+            margin: 0 0 2em 0;
+        }
+
+        h1, h2, h3 {
+            color: #C70039;
+            font-weight: 400px;
+            line-height: 1.5;
+            margin: 0 0 1em 0;
+        }
+
+        /* 
+        h1 a, h2 a, h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        */
+
+/* For Adoption && Boxes */
+
+        .for-adoption, .box {
+            margin: 0 1em 2em 1em;
+            width: 30%;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .for-adoption, .box {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            .for-adoption, .box {
+                width: 100%;
+            }
+        }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 15px;
+    margin: 0 auto;
+    grid-row-gap: 20px;
+}
+
+/*
+.box {
+    position: relative;
+}
+*/
+
+.inner {
+    background-color: #FEF8DD;
+    color: #85461e;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.description {
+    text-align: center;
+    vertical-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+/*
+li:not(.perfil) {
+    float: right;
+}
+*/
+
+/* Button */
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Action on focus input fields */
+.form-container input[type=text]:focus, .form-container input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Style for the submit button */
+.form-container .btn {
+    background-color: #fed766;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+/* Red background color cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+  
+/* Hover effects buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/* Style btn && input */
+.btn {
+    text-shadow: 0 0 5px black;
+}
+input {
+    font-style: italic;
+}
+
+/* Popup msg 
+--
+.popup-msg {
+    background-color: #FFCE84;
+}
+
+.popup-msg h4 {
+    font-weight: bold;
+}
+--
+*/
+
+/* Footer */
+
+footer {
+    align-items: center;
+    text-align:center;
+}
+        
